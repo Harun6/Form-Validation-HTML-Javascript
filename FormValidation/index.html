@@ -1,0 +1,29 @@
+<script src="main.js"></script>
+
+<table>
+
+    <tr>
+        <td>Kullanıcı adı</td>
+        <td><input type="text" id="TxtUsername" onblur="ClearErrorMail();"> </td>
+    </tr>
+
+    <tr>
+        <td>Mail adresi</td>
+        <td><input type="email" id="TxtMailAddress" onblur="CheckEmail();"> <label id="LblValidMail"></label> </td>
+    </tr>
+
+    <tr>
+        <td>Password</td>
+        <td><input type="password" id="TxtPassword" onblur="ClearErrorMail();"> </td>
+    </tr>
+
+    <tr>
+        <td>Re Password</td>
+        <td><input type="password" id="TxtRePassword" onblur="ClearErrorMail(); CheckPassword();"> <label id="LblValidPassword"></label> </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><input type="button" onclick="CheckForm();" id="BtnRegister" value="Register"> </td>
+    </tr>
+
+</table>
